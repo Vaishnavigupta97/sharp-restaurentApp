@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    background-color: #771F08;
+    color: white;
+    justify-content: space-between;
+    padding: 0% 5%;
+    align-items: center;
+}
+/* .header>p{
+    font-size: 30px;
+} */
+.mealImage{
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    background-size: cover;
+    height: 35vh;
+    background-image: url(../../assets/headerFoodImage.jpg);
+}
+/* .mealImage img{
+    width: 100%;
+    height: 30vh;
+} */

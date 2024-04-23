@@ -1,0 +1,18 @@
+.cardButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 20%;
+    background-color: #3E1300;
+    border-radius: 30px;
+    border: navajowhite;
+    color: white;
+    font-size: 17px;
+}
+.buttonCartNumber{
+    background-color: #A33124;
+    color: white;
+    border-radius: 50px;
+    padding: 3% 5%;
+}
