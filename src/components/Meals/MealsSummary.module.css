@@ -1,0 +1,14 @@
+.mealSummaryParent{
+    position: relative;
+}
+.MealsSummary{
+    background-color: #313131;
+    color: white;
+    width: 50%;
+    margin: -10% auto 0% auto;
+    padding: 1%;
+    text-align: center;
+}
+.MealsSummary h2{
+    font-size: 30px;
+}

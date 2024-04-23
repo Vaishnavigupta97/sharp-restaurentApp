@@ -10,13 +10,14 @@
     font-size: 30px;
 } */
 .mealImage{
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: 0% 40%;
     background-size: cover;
-    height: 35vh;
-    background-image: url(../../assets/headerFoodImage.jpg);
-}
-/* .mealImage img{
+    height: 35vh; */
+    /* background-image: url(../../assets/headerFoodImage.jpg); */
     width: 100%;
-    height: 30vh;
-} */
+}
+.mealImage img{
+    width: 100%;
+    height: 50vh;
+}
