@@ -1,4 +1,5 @@
 import classes from "./AvaliableMeans.module.css";
+import MealItemForm from "./MealItem/MealItemForm";
 
 const DUMMY_MEALS = [
     {
@@ -33,9 +34,12 @@ const AvaliableMeans = () => {
         return (
             <>
                 <li>
+                    <div>
                     <p className={classes.mealName}>{meal.name}</p>
                     <p className={classes.mealDiscription}>{meal.description}</p>
                     <p className={classes.mealPrice}>${meal.price}</p>
+                    </div>
+                    <MealItemForm />
                 </li>
             </>
         )
