@@ -5,7 +5,7 @@ const HeaderButtonCard = () => {
     return (
         <>
             <button className={classes.cardButton}>
-                <span>
+                <span className={classes.CartIcon}>
                     <CartIcon />
                 </span>
                 <span>Your Cart</span>
