@@ -1,58 +1,53 @@
+import React from "react";
 import classes from "./AvaliableMeans.module.css";
-import MealItemForm from "./MealItem/MealItemForm";
-
-const DUMMY_MEALS = [
-    {
-        id: "m1",
-        name: "Sushi",
-        description: "Finest fish and veggies",
-        price: 22.99,
-    },
-    {
-        id: "m2",
-        name: "Schnitzel",
-        description: "A german specialty!",
-        price: 16.5,
-    },
-    {
-        id: "m3",
-        name: "Barbecue Burger",
-        description: "American, raw, meaty",
-        price: 12.99,
-    },
-    {
-        id: "m4",
-        name: "Green Bowl",
-        description: "Healthy...and green...",
-        price: 18.99,
-    },
+import MealItem from "./MealItem/MealItem";
+import Card from "../UI/Card";
+const dummyMeals = [
+  {
+    id: "m1",
+    name: "Sushi",
+    description: "Finest fish and veggies",
+    price: 22.99,
+  },
+  {
+    id: "m2",
+    name: "Schnitzel",
+    description: "A german specialty!",
+    price: 16.5,
+  },
+  {
+    id: "m3",
+    name: "Barbecue Burger",
+    description: "American, raw, meaty",
+    price: 12.99,
+  },
+  {
+    id: "m4",
+    name: "Green Bowl",
+    description: "Healthy...and green...",
+    price: 18.99,
+  },
 ];
-
-
-const AvaliableMeans = () => {
-    const mealsList = DUMMY_MEALS.map((meal) => {
-        return (
-            <>
-                <li>
-                    <div>
-                    <p className={classes.mealName}>{meal.name}</p>
-                    <p className={classes.mealDiscription}>{meal.description}</p>
-                    <p className={classes.mealPrice}>${meal.price}</p>
-                    </div>
-                    <MealItemForm />
-                </li>
-            </>
-        )
-    });
+const AvailableMeals = () => {
+  const Meals = dummyMeals.map((meal) => {
+    const { id, name, description, price } = meal;
     return (
-        <>
-            <section className={classes.mealListSection}>
-                <ul type="none">
-                    {mealsList}
-                </ul>
-            </section>
-        </>
-    )
-}
-
-export default AvaliableMeans;
+      <MealItem
+        key={id}
+        id={id}
+        name={name}
+        description={description}
+        price={price}
+        items={meal}
+      />
+    );
+  });
+  return (
+    <section className={classes.meals}>
+      <Card>
+        <ul>{Meals}</ul>
+      </Card>
+    </section>
+  );
+};
+export default AvailableMeals;

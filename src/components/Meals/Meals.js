@@ -1,15 +1,12 @@
 import React from "react";
-
+import AvailableMeals from "./AvaliableMeans";
 import MealsSummary from "./MealsSummary";
-import AvaliableMeans from "./AvaliableMeans";
-
 const Meals = () => {
-    return(
-        <React.Fragment>
-        <MealsSummary />
-        <AvaliableMeans />
-        </React.Fragment>
-    )
-}
-
+  return (
+    <React.Fragment>
+      <MealsSummary />
+      <AvailableMeals />
+    </React.Fragment>
+  );
+};
 export default Meals;

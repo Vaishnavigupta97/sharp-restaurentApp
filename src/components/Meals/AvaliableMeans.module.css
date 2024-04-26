@@ -1,28 +1,24 @@
-.mealListSection{
-    width: 60%;
-    margin: 2% auto;
-    background-color: white;
-    padding: 1% 0;
-    border-radius: 8px;
-}
-.mealListSection ul li{
-    border-bottom: 1px solid #B8B8B8;
-    line-height: 30%;
-    width: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.mealName{
-    font-size: 20px;
-    font-weight: 600;
-}
-.mealDiscription{
-    font-size: 15px;
-    /* font-family: ; */
-}
-.mealPrice{
-    color: #500e02;
-    font-weight: 600;
-    font-size: 17px;
-}
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
